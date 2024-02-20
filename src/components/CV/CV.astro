@@ -1,0 +1,124 @@
+---
+import Logo from "../Logo.astro"
+import LinkedInIcon from "./LinkedInIcon.astro"
+import MailIcon from "./mail.astro"
+import SocialPill from "./SocialPill.astro"
+
+const props = Astro.props
+---
+
+<section id="CV" class=" top-0 z-[-2] h-auto w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)] text-[#151a36]
+mx-auto
+">
+    <span id="basics">
+        <Logo alt="logo Dr Athie" class="w-16 mb-10 text-center m-auto pt-10" />
+
+<h1 class="text-center py-10 font-bold text-4xl"> Curriculum Vitae </h1>
+<h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white pl-10"
+  >
+    ¡Hola! Soy Jose Manuel Athié
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800  [&>strong]:text-blue-500 [&>strong]:font-semibold dark:text-gray-300 w-2/3 lg:w-1/2 pl-12"
+  >
+    +35 años de experiencia. <strong
+      >Soy médico anestesiólogo, profesor universitario y director médico del Hospital Ángeles Mocel.</strong
+    > <br> Nacido en Tehuacán, Puebla, mi práctica se centra en el cuidado del paciente y la aplicación de técnicas de anestesia novedosas. 
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8 pl-12">
+    <SocialPill href="mailto:dr.jathie@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://linkedin.com/in/jose-manuel-athie-garcia-4b0a181a">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+    </span>
+</section>
+
+<section id="Experiencia Laboral" class="grid xl:grid-cols-2 bg-white pt-10 pl-6 sm:pl-12 grid-cols-1">
+
+    <ol class="relative border-s border-gray-200 dark:border-gray-700 text-gray-800">
+        <h2 class="text-center pb-10 text-2xl font-semibold">Experiencia Profesional</h2>         
+        <li class="mb-10 ms-6">            
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </span>
+            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Profesor adjunto del curso de internado de pregrado de la Universidad<span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Actualmente</span></h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2004 a la fecha</time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Universidad Anáhuac</p>
+        </li>
+        <li class="mb-10 ms-6">            
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </span>
+            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Profesor titular del curso en especialización en Anestesia<span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Actualmente</span></h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">1997 a la fecha</time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Universidad Mexicana de Medicina de la Universidad La Salle</p>
+        </li>
+        <li class="mb-10 ms-6">            
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </span>
+            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Director Médico del Hospital Ángeles Mocel<span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Actualmente</span></h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">1996 a la fecha</time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Grupo Ángeles</p>
+        </li>
+        <li class="mb-10 ms-6">            
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </span>
+            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Médico Anestesiólogo<span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Actualmente</span></h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">1984 a la fecha</time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Diversos hospitales privados de la Ciudad de México</p>
+        </li>
+    </ol>
+    
+    <ol class="relative border-s border-gray-200 dark:border-gray-700 text-gray-800">
+        <h2 class="text-center pb-10 text-2xl font-semibold">Educación</h2>         
+        <li class="mb-10 ms-6">            
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24" {...props}>
+                    <path fill="white" d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72L5.18 9L12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z" />
+                </svg>
+            </span>
+            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Maestría en Administración de Instituciones de Salud</h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2021-2022</time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Universidad Anáhuac</p>
+        </li>
+
+        <li class="mb-10 ms-6">            
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24" {...props}>
+                    <path fill="white" d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72L5.18 9L12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z" />
+                </svg>
+            </span>
+            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Posgrado en Anestesia - Programa de residencia en Anestesia</h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">1982-1984</time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Hospital Mocel</p>
+        </li>
+        <li class="mb-10 ms-6">            
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24" {...props}>
+                    <path fill="white" d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zm6.82 6L12 12.72L5.18 9L12 5.28zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73z" />
+                </svg>
+            </span>
+            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Licenciatura como Médico Cirujano </h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">1975-1980</time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Escuela Mexicana de Medicina de la Universidad La Salle</p>
+        </li>
+
+    </ol>
+
+</section>

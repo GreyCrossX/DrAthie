@@ -1,0 +1,22 @@
+---
+import { papers } from "./data";
+import Card from "./Card.astro";
+import Logo from "./Logo.astro";
+import { hydrate } from "react-dom";
+
+---
+
+
+
+<section id="Investigacion" class="top-0 z-[-2] h-auto w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)] text-[#151a36] mx-auto">
+  <span id="papers">
+    <Logo alt="logo Dr Athie" class="w-16 mb-10 text-center m-auto pt-10" />
+    <h1 class="text-xl py-8 font-semibold px-4">Estos son algunas de las publicaciones realizadas por el Dr. Athie</h1>
+    <div class="flex flex-wrap mt-6 gap-4 pl-4">
+      {papers.slice(0, 3).map((invdata) => <Card invdata={invdata} />)}
+    </div>
+    <div class="py-4 flex justify-center">
+      <button></button>
+    </div>
+  </span>
+</section>

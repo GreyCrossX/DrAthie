@@ -1,0 +1,57 @@
+---
+import Button from '../components/Button'
+import Logo from './Logo.astro'
+---
+
+<section id="/" class="top-0 z-[-2] h-auto w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)] text-[#151a36]
+mx-auto">
+
+<div
+  class="relative h-dvh w-full max-w-[100vw] md:aspect-video md:h-[80vh] xl:h-full"
+>
+  <div
+    class="absolute inset-0 h-full justify-center z-10 m-auto flex flex-col items-center w-full"
+  >
+    <section
+      class="absolute z-10 animate-fade-up flex justify-center items-center gap-8 flex-col"
+    >
+      <h1
+        class="flex items-center gap-5 text-4xl md:text-6xl lg:gap-20 lg:text-8xl font-tomaso"
+      >
+        <span>J</span>
+        <span>M</span>
+        <Logo
+          class="h-9 w-auto md:h-[3.75rem] lg:h-24 scale-150"
+          aria-label="A"
+        />
+        <span>G</span>
+      </h1>
+
+      <p
+      class="subtitle text-2xl lg:text-2xl text-center text-wrap font-jura px-4 pt-6 text-[#151a36] font-semibold"
+    >
+      {"Dr. José Manuel Athié García"}
+    </p>
+      <p
+        class="subtitle text-xl lg:text-2xl text-center text-wrap font-jura px-4 text-[#151a36]"
+      >
+        {"Médico anestesiólogo"}
+      </p>
+
+      <Button
+        target="_self"
+        className="text-blue-950 animate-fade-up bg-white"
+        url="#Intro"
+      >
+        {"Conóceme"}
+      </Button>
+    </section>
+
+<img src="/quirofano.jpeg" alt="Dr Jose Manuel Athié analizando signos vitales en quirofano del Hospital Angeles Mocel" class="hidden lg:block w-full h-full opacity-55 top ">
+
+</div>
+  </div>
+
+</div>
+
+</section>
