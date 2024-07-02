@@ -1,12 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro'
 import Video from '../components/Video.astro'
 import Intro from '../components/Intro.astro'
-import Footer from '../components/Footer.astro'
 import CV from '../components/CV/CV.astro';
 import Contacto from "../components/Contacto.astro"
-import Investigacion from '../components/Investigacion.astro';
+import Publications from '../components/Publications.jsx';
 
 ---
 
@@ -17,7 +15,7 @@ import Investigacion from '../components/Investigacion.astro';
  <Video />
 	<main>
 		<Intro />
-		<Investigacion />
+		<Publications client:load />
 		<Contacto />
 		<CV />
 	</main>
