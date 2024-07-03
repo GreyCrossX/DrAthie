@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
+import Logo from "./Logo.astro";
 
 const Contacto = () => {
   const form = useRef();
@@ -39,7 +40,19 @@ const Contacto = () => {
 
   return (
     <form ref={form} onSubmit={handleSubmit(onSubmit)}>
-      <section id="Contacto" className="bg-white dark:bg-gray-900">
+
+      <section id="Contacto" class=" top-0 z-0 h-auto w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] text-[#151a36]">
+      <svg 
+
+  viewBox="0 0 160 200"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  className="w-16 mb-10 text-center m-auto pt-10"
+>
+  <path d="M0 200L75 142L32 138L75 0L0 200Z" fill="currentColor" />
+  <path d="M160 200L85 142L128 138L85 0L160 200Z" fill="currentColor" />
+
+</svg>
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
             Contáctame
