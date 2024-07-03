@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Video from '../components/Video.astro'
 import Intro from '../components/Intro.astro'
 import CV from '../components/CV/CV.astro';
-import Contacto from "../components/Contacto.astro"
+import Contacto from '../components/Contacto.jsx'
 import Publications from '../components/Publications.jsx';
 
 ---
@@ -13,10 +13,10 @@ import Publications from '../components/Publications.jsx';
  description="Médico antestesiólogo, director del Hospital Ángeles Mocel y práctica en los principales hospitales privados de la Ciudad de México"
  >
  <Video />
-	<main>
+	<main class="z-0">
 		<Intro />
 		<Publications client:load />
-		<Contacto />
+		<Contacto client:load />
 		<CV />
 	</main>
 
