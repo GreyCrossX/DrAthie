@@ -130,7 +130,7 @@ const Contacto = () => {
               type="submit"
               className="w-fit lg:text-lg font-medium no-underline px-5 py-3 border border-solid border-white text-white rounded-full uppercase bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
             >
-              Send message
+              Enviar mensaje
             </button>
           </div>
         </div>
